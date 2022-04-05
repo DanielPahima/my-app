@@ -18,3 +18,17 @@ Use Git to clone the project
 ```bash
 git@github.com:DanielPahima/my-app.git
 ```
+To run for example:
+```bash
+docker pull 100570/my-app-java:1.0.1
+docer run -d -it <IMAGE ID> /bin/bash
+docker exec -it <CONTAINER ID> /bin/bash
+java -cp target/classes com.mycompany.app.App
+```
+## OR
+
+Just run the script - build
+
+```bash
+./build
+```
